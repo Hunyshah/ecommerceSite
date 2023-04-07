@@ -13,18 +13,15 @@ import { useState } from 'react';
 import { Tab, Tabs } from '@mui/material';
 
 export default function Navbar() {
-  const[opens,setopen]=useState(false)
   const [value, setvalue] = useState(0)
     const theme = useTheme();
      const ismatch = useMediaQuery(theme.breakpoints.down('sm')
         )
 
-        const menuBottonHandler = ()=>{
-          setopen(true)
-        }
+        
         const pages = ["Home","AboutUs","ContactUs","Login"]
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1 ,margin:'0px'}}>
       <AppBar variant='' position="static">
         <Toolbar>
             {ismatch ?<>
